@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-x: hidden;
+	margin: 0;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+header {
+	position: relative;
+	border: 1px solid red;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+	height: 72px;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+.header-container {
+	margin: 0 auto;
+	max-width: 1440px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.brand {
+	max-width: 51px;
+	max-height: 51px;
+	object-fit: contain;
+}
+
+.logo-img {
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	transform: translateX(150%);
+	transition-duration: 0.2s;
+	padding-top: 3.2rem;
+	background: #fff;
+	position: absolute;
+	right: -0.05rem;
+	top: 72px;
+	width: 60vw;
+	height: 100vh;
+}
+
+.left-nav ul {
+	list-style-type: none;
+}
+
+.left-nav ul li {
+	cursor: pointer;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.left-nav ul li:hover {
+	color: #008248;
+}
+
+.left-nav ul li span {
+	font-size: 1.25rem;
+}
+
+.navbar .hr-line {
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.nav-toggle {
+	cursor: pointer;
+	right: 1.6rem;
+	position: absolute;
+	font-size: 1.25rem;
+}
+
+.nav-toggle i {
+	color: rgb(114, 114, 114);
+}
+
+.nav-active {
+	padding-top: 3.2rem;
+	background: #fff;
+	position: absolute;
+	right: -0.05rem;
+	top: 72px;
+	width: 60vw;
+	height: 100vh;
+	transform: translateX(0%);
+}
+
+.nav-active .nav-toggle i::after {
+	content: "\f00d";
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 700;
+}
+
+.right-nav {
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+.sign-in {
+	font-weight: 600;
+	text-decoration: none;
+	color: #000;
+	border-radius: 50px;
+	padding: 8px 24px;
+	border: 2px solid rgba(0, 0, 0, 0.87);
+	margin-right: 0.8rem;
+	margin-left: 0.8rem;
+	font-size: 1.05rem;
+}
+
+.sign-in:hover {
+	background-color: rgba(0, 0, 0, 0.06);
+}
+
+.join-now {
+	font-size: 1.05rem;
+	font-weight: 600;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 50px;
+	padding: 8px 24px;
+	border: 2px solid rgba(0, 0, 0, 0.87);
+	background-color: #000;
+}
+
+.join-now:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-color: rgba(0, 0, 0, 0.7);
+}
+
+.find-store {
+	margin-right: 0.8rem;
+	line-height: 1.5;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 1.05rem;
+	text-align: center;
+}
+
+.find-store span i {
+	font-size: 1.3rem;
+	margin-right: 0.8rem;
+}
+
+.find-store:hover {
+	color: #008248;
+}
+
+/* Media Queries */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+	header {
+		height: 101px;
+	}
+
+	.nav-toggle {
+		display: none;
+	}
+
+	.navbar {
+		align-items: center;
+		justify-content: space-between;
+		margin: 0;
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		transform: translateX(0%);
+		background: #fff;
+		right: 0;
+		top: 0;
+		padding-top: 0;
+	}
+
+	.navbar .left-nav ul {
+		display: flex;
+	}
+
+	.navbar .left-nav ul li {
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.navbar .left-nav .menuIcon {
+		display: none;
+	}
+
+	.navbar .hr-line {
+		display: none;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+	.brand {
+		position: absolute;
+		left: 12%;
+	}
+}

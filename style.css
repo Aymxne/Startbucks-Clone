@@ -23,6 +23,7 @@ header {
 }
 
 .header-container {
+	position: relative;
 	margin: 0 auto;
 	max-width: 1440px;
 	display: flex;
@@ -228,6 +229,6 @@ header {
 @media only screen and (min-width: 1600px) {
 	.brand {
 		position: absolute;
-		left: 8%;
+		left: -4.6rem;
 	}
 }

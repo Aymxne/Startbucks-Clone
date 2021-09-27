@@ -14,7 +14,7 @@ body {
 
 header {
 	position: relative;
-	border: 1px solid red;
+
 	background-color: #fff;
 	box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
 	height: 72px;
@@ -44,7 +44,7 @@ header {
 }
 
 .navbar {
-	transform: translateX(150%);
+	transform: translateX(110%);
 	transition-duration: 0.2s;
 	padding-top: 3.2rem;
 	background: #fff;
@@ -105,7 +105,7 @@ header {
 	top: 72px;
 	width: 60vw;
 	height: 100vh;
-	transform: translateX(0%);
+	transform: translateX(5%);
 }
 
 .nav-active .nav-toggle i::after {
